@@ -1,0 +1,10 @@
+{
+    "./apps/**/*.{js,ts,tsx,jsx}": [
+        "eslint --fix",
+        "npx prettier --write"
+    ],
+    "packages/ui/**/*.{js,ts,tsx,jsx}": [
+        "eslint --fix",
+        "npx prettier --write"
+    ]
+}
