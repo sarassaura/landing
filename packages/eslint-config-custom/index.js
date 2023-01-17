@@ -36,6 +36,7 @@ module.exports = {
         namedComponents: 'arrow-function',
       },
     ],
+    'react/jsx-no-comment-textnodes': 'off',
 
     // next
     '@next/next/no-html-link-for-pages': 'off',
