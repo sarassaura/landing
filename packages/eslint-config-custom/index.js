@@ -37,6 +37,7 @@ module.exports = {
       },
     ],
     'react/jsx-no-comment-textnodes': 'off',
+    '@typescript-eslint/no-explicit-any': 'error',
 
     // next
     '@next/next/no-html-link-for-pages': 'off',
