@@ -91,7 +91,7 @@ const letterSpacings = {
   widest: '0.1em',
 }
 
-const theme = extendTheme({
+export const theme = extendTheme({
   fonts,
   colors,
   fontSizes,
@@ -99,5 +99,3 @@ const theme = extendTheme({
   letterSpacings,
   lineHeights,
 })
-
-export default theme
