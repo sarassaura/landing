@@ -4,4 +4,5 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: './tsconfig.json',
   },
+  extends: ['plugin:storybook/recommended'],
 }
