@@ -1,3 +1,4 @@
+import { themes } from '@storybook/theming'
 import { theme } from 'ui'
 
 export const parameters = {
@@ -8,7 +9,11 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  docs: {
+    theme: themes.dark,
+  },
   chakra: {
     theme,
+    resetCSS: true,
   },
 }
