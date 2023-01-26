@@ -2,11 +2,7 @@ import { createIcon } from '@chakra-ui/react'
 
 const Graphql = createIcon({
   displayName: 'Graphql',
-  // width:"90",
-  // height:"90",
   viewBox: '0 0 90 90',
-  // fill:"none",
-  // xmlns:"http://www.w3.org/2000/svg",
   path: [
     <path
       d="M9.6957 66.2309L12.9302 68.0984L48.964 5.68794L45.7295 3.82044L9.6957 66.2309Z"

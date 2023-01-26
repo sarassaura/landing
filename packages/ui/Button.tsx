@@ -5,5 +5,3 @@ export const Button = () => (
     Boop
   </ChakraButton>
 )
-
-export const AnotherButton = () => <button type="button">Boop</button>

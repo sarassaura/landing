@@ -1,11 +1,8 @@
 import { createIcon } from '@chakra-ui/react'
 
 const TextLogo = createIcon({
-  // width:"23",
-  // height:"17",
+  displayName: 'TextLogo',
   viewBox: '0 0 23 17',
-  // fill:"none",
-  // xmlns:"http://www.w3.org/2000/svg",
   path: [
     <path
       d="M2.81745 17L1.8122 14.5321L21.9566 5.06198L22.9619 7.52987L2.81745 17Z"

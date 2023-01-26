@@ -2,11 +2,7 @@ import { createIcon } from '@chakra-ui/react'
 
 const BigLogo = createIcon({
   displayName: 'BigLogo',
-  // width: '189',
-  // height: '243',
   viewBox: '0 0 189 243',
-  // fill: 'none',
-  // xmlns: 'http://www.w3.org/2000/svg',
   path: [
     <path
       d="M0 29.7676L27.4372 19.1469L132.723 231.977L105.286 242.598L0 29.7676Z"
