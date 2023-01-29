@@ -7,6 +7,7 @@ import {
   NavigationBar,
   MenuItem,
 } from 'ui'
+import 'ui/styles/styles.css'
 import RightArrow from 'ui/assets/RightArrow'
 import DarkRightArrow from 'ui/assets/DarkRightArrow'
 import Link from 'next/link'
