@@ -1,5 +1,6 @@
 import { Flex } from '@chakra-ui/react'
-import React, { useMemo } from 'react'
+import React from 'react'
+import ReactScrollWheelHandler from 'react-scroll-wheel-handler'
 
 interface ContainerProps {
   children: React.ReactNode
@@ -9,29 +10,17 @@ interface ContainerProps {
   changePage: (up: number) => void
 }
 
-const throttle = (fn: () => void, delay: number) => {
-  let lasTime = 0
-  return () => {
-    const now = new Date().getTime()
-    if (now - lasTime < delay) return
-    lasTime = now
-    fn()
-  }
-}
-
 export const Container: React.FC<ContainerProps> = ({
   children,
   direction,
   bgGradient,
   id,
   changePage,
-}) => {
-  const onWheelThrottled = useMemo(
-    () => throttle(() => changePage(-200), 500),
-    [changePage]
-  )
-
-  return (
+}) => (
+  <ReactScrollWheelHandler
+    upHandler={() => changePage(1)}
+    downHandler={() => changePage(-1)}
+  >
     <Flex
       id={id}
       width="100%"
@@ -43,9 +32,8 @@ export const Container: React.FC<ContainerProps> = ({
       direction={direction}
       paddingLeft={[0, 0, 79]}
       paddingTop={[0, 0, 66]}
-      onWheel={() => onWheelThrottled()}
     >
       {children}
     </Flex>
-  )
-}
+  </ReactScrollWheelHandler>
+)
