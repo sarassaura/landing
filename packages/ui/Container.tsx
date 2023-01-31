@@ -18,8 +18,14 @@ export const Container: React.FC<ContainerProps> = ({
   changePage,
 }) => (
   <ReactScrollWheelHandler
-    upHandler={() => changePage(1)}
-    downHandler={() => changePage(-1)}
+    upHandler={(e) => {
+      e.preventDefault()
+      changePage(1)
+    }}
+    downHandler={(e) => {
+      e.preventDefault()
+      changePage(-1)
+    }}
   >
     <Flex
       id={id}
