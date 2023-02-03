@@ -8,7 +8,9 @@ export default {
   component: Mongo,
 } as ComponentMeta<typeof Mongo>
 
-const Template: ComponentStory<typeof Mongo> = () => <Mongo w={122} h={122} />
+const Template: ComponentStory<typeof Mongo> = () => (
+  <Mongo width="122px" height="122px" />
+)
 
 export const Primary = Template.bind({})
 

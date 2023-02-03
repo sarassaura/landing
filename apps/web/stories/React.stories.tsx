@@ -7,7 +7,9 @@ export default {
   component: React,
 } as ComponentMeta<typeof React>
 
-const Template: ComponentStory<typeof React> = () => <React w={91} h={81} />
+const Template: ComponentStory<typeof React> = () => (
+  <React width="91px" height="81px" />
+)
 
 export const Primary = Template.bind({})
 

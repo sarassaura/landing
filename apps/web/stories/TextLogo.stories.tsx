@@ -9,7 +9,7 @@ export default {
 } as ComponentMeta<typeof TextLogo>
 
 const Template: ComponentStory<typeof TextLogo> = () => (
-  <TextLogo w={23} h={17} />
+  <TextLogo width="23px" height="17px" />
 )
 
 export const Primary = Template.bind({})

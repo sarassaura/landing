@@ -9,7 +9,7 @@ export default {
 } as ComponentMeta<typeof Typescript>
 
 const Template: ComponentStory<typeof Typescript> = () => (
-  <Typescript w={105} h={69} />
+  <Typescript width="105px" height="69px" />
 )
 
 export const Primary = Template.bind({})

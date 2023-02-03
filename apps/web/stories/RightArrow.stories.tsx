@@ -8,10 +8,17 @@ export default {
   component: RightArrow,
 } as ComponentMeta<typeof RightArrow>
 
-const Template: ComponentStory<typeof RightArrow> = () => (
-  <RightArrow w={12} h={7} />
+const Template: ComponentStory<typeof RightArrow> = (args) => (
+  <RightArrow {...args} />
 )
 
 export const Primary = Template.bind({})
+Primary.args = { width: '12px', height: '7px', color: 'white' }
+Primary.storyName = 'Light'
 
-Primary.args = {}
+export const Secundary = Template.bind({})
+Secundary.args = { ...Primary.args, color: '#838383' }
+Secundary.parameters = {
+  backgrounds: { default: 'light' },
+}
+Secundary.storyName = 'Dark'

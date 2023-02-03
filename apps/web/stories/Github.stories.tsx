@@ -8,7 +8,9 @@ export default {
   component: Github,
 } as ComponentMeta<typeof Github>
 
-const Template: ComponentStory<typeof Github> = () => <Github w={20} h={20} />
+const Template: ComponentStory<typeof Github> = () => (
+  <Github width="20px" height="20px" />
+)
 
 export const Primary = Template.bind({})
 

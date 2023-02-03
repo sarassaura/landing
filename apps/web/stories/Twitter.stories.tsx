@@ -8,7 +8,9 @@ export default {
   component: Twitter,
 } as ComponentMeta<typeof Twitter>
 
-const Template: ComponentStory<typeof Twitter> = () => <Twitter w={21} h={17} />
+const Template: ComponentStory<typeof Twitter> = () => (
+  <Twitter width="21px" height="17px" />
+)
 
 export const Primary = Template.bind({})
 

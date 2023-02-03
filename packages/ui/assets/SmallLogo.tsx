@@ -1,11 +1,8 @@
 import { createIcon } from '@chakra-ui/react'
 
 const SmallLogo = createIcon({
-  // width:"22",
-  // height:"27",
+  displayName: 'SmallLogo',
   viewBox: '0 0 22 27',
-  // fill:"none",
-  // xmlns:"http://www.w3.org/2000/svg",
   path: [
     <path
       d="M0 3.30751L3.19375 2.12744L15.4492 25.7753L12.2555 26.9553L0 3.30751Z"
