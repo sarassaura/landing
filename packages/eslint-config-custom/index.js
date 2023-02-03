@@ -36,17 +36,16 @@ module.exports = {
         namedComponents: 'arrow-function',
       },
     ],
+    'react/prop-types': 'off',
     'react/jsx-no-comment-textnodes': 'off',
     '@typescript-eslint/no-explicit-any': 'error',
-    "import/no-extraneous-dependencies": [
-      "error",
+    'import/prefer-default-export': 'off',
+    'import/no-extraneous-dependencies': [
+      'error',
       {
-        "devDependencies": [
-          "**/*.stories.*",
-          "**/.storybook/**/*.*"
-        ],
-        "peerDependencies": true
-      }
+        devDependencies: true,
+        peerDependencies: true,
+      },
     ],
     // next
     '@next/next/no-html-link-for-pages': 'off',

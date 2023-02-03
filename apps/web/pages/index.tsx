@@ -1,10 +1,15 @@
-import { Button } from 'ui'
+import Contact from '../Sections/contact'
+import Home from '../Sections/home'
+import Services from '../Sections/services'
+import Technologies from '../Sections/technologies'
 
-const Web = () => (
-  <div>
-    <h1>Web</h1>
-    <Button />
-  </div>
+const Index = () => (
+  <>
+    <Home />
+    <Services />
+    <Technologies />
+    <Contact />
+  </>
 )
 
-export default Web
+export default Index
