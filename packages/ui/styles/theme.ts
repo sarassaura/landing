@@ -1,11 +1,11 @@
 import { extendTheme } from '@chakra-ui/react'
 
-const fonts = {
+export const fonts = {
   heading: `Inter, sans-serif`,
   body: `Inter, sans-serif`,
 }
 
-const colors = {
+export const colors = {
   black: {
     lightBackground: '#1B1C20',
     darkBackground: '#1F2226',
@@ -36,7 +36,7 @@ const colors = {
   },
 }
 
-const fontSizes = {
+export const fontSizes = {
   xs: '0.75rem',
   sm: '0.875rem',
   md: '1rem',
@@ -52,7 +52,7 @@ const fontSizes = {
   '9xl': '8rem',
 }
 
-const fontWeights = {
+export const fontWeights = {
   hairline: 100,
   thin: 200,
   light: 300,
@@ -64,7 +64,7 @@ const fontWeights = {
   black: 900,
 }
 
-const lineHeights = {
+export const lineHeights = {
   normal: 'normal',
   none: 1,
   shorter: 1.25,
@@ -82,7 +82,7 @@ const lineHeights = {
   '10': '2.5rem',
 }
 
-const letterSpacings = {
+export const letterSpacings = {
   tighter: '-0.05em',
   tight: '-0.025em',
   normal: '0',
@@ -91,7 +91,7 @@ const letterSpacings = {
   widest: '0.1em',
 }
 
-const config = {
+export const config = {
   initialColorMode: 'dark',
 }
 

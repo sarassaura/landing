@@ -20,6 +20,7 @@
     "@chakra-ui/react": "^2.4.9",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "framer-motion": "^8.4.3"
+    "framer-motion": "^8.4.3",
+    "react-scroll-wheel-handler": "^2.2.0"
   }
 }
