@@ -8,7 +8,9 @@ export default {
   component: Chevron,
 } as ComponentMeta<typeof Chevron>
 
-const Template: ComponentStory<typeof Chevron> = () => <Chevron w={26} h={17} />
+const Template: ComponentStory<typeof Chevron> = () => (
+  <Chevron width="26px" height="17px" />
+)
 
 export const Primary = Template.bind({})
 

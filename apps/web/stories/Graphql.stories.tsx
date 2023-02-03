@@ -8,7 +8,9 @@ export default {
   component: Graphql,
 } as ComponentMeta<typeof Graphql>
 
-const Template: ComponentStory<typeof Graphql> = () => <Graphql w={90} h={90} />
+const Template: ComponentStory<typeof Graphql> = () => (
+  <Graphql width="90px" height="90px" />
+)
 
 export const Primary = Template.bind({})
 

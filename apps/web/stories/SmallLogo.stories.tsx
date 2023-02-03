@@ -9,7 +9,7 @@ export default {
 } as ComponentMeta<typeof SmallLogo>
 
 const Template: ComponentStory<typeof SmallLogo> = () => (
-  <SmallLogo w={22} h={27} />
+  <SmallLogo width="22px" height="27px" />
 )
 
 export const Primary = Template.bind({})

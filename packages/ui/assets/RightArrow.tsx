@@ -1,15 +1,12 @@
 import { createIcon } from '@chakra-ui/react'
 
 const RightArrow = createIcon({
-  // width:"12",
-  // height:"7",
+  displayName: 'RightArrow',
   viewBox: '0 0 12 7',
-  // fill:"none",
-  // xmlns:"http://www.w3.org/2000/svg",
   path: (
     <path
       d="M9.038 2.44211H0.393441C-0.0383944 2.44211 0.000958442 2.60206 0.000958442 3.1862C0.000958442 3.1862 -0.0383944 4.56624 0.393441 4.56624H9.038V6.46734C9.038 6.94527 9.46199 7.17892 9.70539 6.83906L11.8881 3.8759C12.0373 3.66348 12.0373 3.33424 11.8881 3.12183L9.70539 0.158667C9.46199 -0.181194 9.038 0.0630805 9.038 0.530389V2.44211Z"
-      fill="white"
+      fill="currentColor"
     />
   ),
 })
