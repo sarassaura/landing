@@ -36,7 +36,7 @@ const Home = () => {
       <Flex
         direction="column"
         marginX={['45px', '45px', '139px']}
-        width={['330px', '330px', '567px']}
+        width={['300px', '300px', '500px']}
         align={['center', 'center', 'start']}
       >
         <Heading

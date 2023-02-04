@@ -1,5 +1,6 @@
 export {
   ChakraProvider,
+  extendTheme,
   Text,
   Button,
   useMediaQuery,

@@ -2,7 +2,8 @@ import type { AppProps } from 'next/app'
 import { Inter } from '@next/font/google'
 import {
   ChakraProvider,
-  theme,
+  extendTheme,
+  themeProps,
   Layout,
   SideBar,
   NavigationBar,
@@ -13,6 +14,13 @@ import RightArrow from 'ui/assets/RightArrow'
 import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const fonts = {
+  heading: inter.style.fontFamily,
+  body: inter.style.fontFamily,
+}
+
+const theme = extendTheme(themeProps, fonts)
 
 const MyApp = ({ Component, pageProps, router }: AppProps) => (
   <ChakraProvider theme={theme}>

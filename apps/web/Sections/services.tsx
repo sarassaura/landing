@@ -37,7 +37,7 @@ const Services = () => {
         marginBottom={['112px', '112px', '64px']}
         marginTop={['100px', '100px', '0px']}
         marginX="45px"
-        width={['330px', '330px', '600px']}
+        width={['280px', '280px', '600px']}
         textAlign="center"
       >
         We help clients with
