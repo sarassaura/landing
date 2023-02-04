@@ -23,6 +23,7 @@ export const NavigationBar: React.FC<NavigationProps> = ({
         : '1px solid rgba(255, 255, 255, 0.19)'
     }
     display={['none', 'none', 'flex']}
+    zIndex={9999}
   >
     <SmallLogo w={22} h={27} margin="0px 30px 0px 27px" />
     <Menu>{children}</Menu>
