@@ -1,4 +1,5 @@
 import { extendTheme } from '@chakra-ui/react'
+import { Button } from '../Button'
 
 export const fonts = {
   heading: `Inter, sans-serif`,
@@ -95,6 +96,10 @@ export const config = {
   initialColorMode: 'dark',
 }
 
+export const components = {
+  Button,
+}
+
 export const theme = extendTheme({
   fonts,
   colors,
@@ -103,4 +108,5 @@ export const theme = extendTheme({
   letterSpacings,
   lineHeights,
   config,
+  components,
 })
