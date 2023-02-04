@@ -20,6 +20,7 @@ export const SideBar: React.FC<SideProps> = ({ router }) => (
         : '1px solid rgba(255, 255, 255, 0.19)'
     }
     display={['none', 'none', 'flex']}
+    zIndex={9999}
   >
     <Express
       height="141px"

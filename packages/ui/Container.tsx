@@ -38,6 +38,7 @@ export const Container: React.FC<ContainerProps> = ({
       direction={direction}
       paddingLeft={[0, 0, 79]}
       paddingTop={[0, 0, 66]}
+      position="relative"
     >
       {children}
     </Flex>
