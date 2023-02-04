@@ -1,4 +1,4 @@
-import { Container, colors, NextPage, useMediaQuery, Text } from 'ui'
+import { Container, colors, NextPage, useMediaQuery, Text, Heading } from 'ui'
 import { useRouter } from 'next/router'
 
 import Link from 'next/link'
@@ -24,10 +24,18 @@ const Technologies = () => {
       bgGradient={`linear(to-l,${colors.red.lightBackground}, ${colors.red.darkBackground})`}
       changePage={changePage}
     >
-      <Text>
-        {isNotMobile ? 'Desktop Technologies' : 'Mobile Technologies'}
+      <Heading variant="title" marginBottom={['30px', '30px', '40px']}>
+        Technologies
+      </Heading>
+      <Text
+        variant="subtitle"
+        width={['281px', '281px', '540px']}
+        textAlign="center"
+      >
+        We make your ideas for web services a reality with a incredible Tech
+        Stack
       </Text>
-      <Link href="#Contact" scroll={false}>
+      <Link href="#Contact" scroll={false} title="Contact">
         <NextPage />
       </Link>
     </Container>

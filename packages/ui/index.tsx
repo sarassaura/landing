@@ -1,4 +1,11 @@
-export { ChakraProvider, Text, Button, useMediaQuery } from '@chakra-ui/react'
+export {
+  ChakraProvider,
+  Text,
+  Button,
+  useMediaQuery,
+  Heading,
+  Flex,
+} from '@chakra-ui/react'
 
 export * from './styles/theme'
 

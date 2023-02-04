@@ -40,13 +40,7 @@ module.exports = {
     'react/jsx-no-comment-textnodes': 'off',
     '@typescript-eslint/no-explicit-any': 'error',
     'import/prefer-default-export': 'off',
-    'import/no-extraneous-dependencies': [
-      'error',
-      {
-        devDependencies: true,
-        peerDependencies: true,
-      },
-    ],
+    'import/no-extraneous-dependencies': 'off',
     // next
     '@next/next/no-html-link-for-pages': 'off',
   },

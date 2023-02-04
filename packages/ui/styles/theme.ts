@@ -1,5 +1,7 @@
 import { extendTheme } from '@chakra-ui/react'
 import { Button } from '../Button'
+import { Heading } from '../Heading'
+import { Text } from '../Text'
 
 export const fonts = {
   heading: `Inter, sans-serif`,
@@ -98,6 +100,8 @@ export const config = {
 
 export const components = {
   Button,
+  Heading,
+  Text,
 }
 
 export const theme = extendTheme({
