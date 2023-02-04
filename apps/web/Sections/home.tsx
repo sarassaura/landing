@@ -1,4 +1,13 @@
-import { Container, colors, NextPage, useMediaQuery, Text } from 'ui'
+import {
+  Container,
+  colors,
+  NextPage,
+  useMediaQuery,
+  Text,
+  Heading,
+  Button,
+  Flex,
+} from 'ui'
 import { useRouter } from 'next/router'
 
 import Link from 'next/link'
@@ -24,10 +33,32 @@ const Home = () => {
       bgGradient={`linear(to-l,${colors.black.lightBackground}, ${colors.black.darkBackground})`}
       changePage={changePage}
     >
-      <Text>{isNotMobile ? 'Desktop Home' : 'Mobile Home'}</Text>
-      <Link href="#Services" scroll={false}>
-        <NextPage />
-      </Link>
+      <Flex
+        direction="column"
+        marginX={['45px', '45px', '139px']}
+        width={['300px', '300px', '500px']}
+        align={['center', 'center', 'start']}
+      >
+        <Heading
+          variant="title"
+          marginBottom={['29px', '29px', '31px']}
+          textAlign={['center', 'center', 'start']}
+        >
+          Transform your vision into a stunning reality!
+        </Heading>
+        <Text
+          variant="subtitle"
+          marginBottom={['29px', '29px', '20px']}
+          textAlign="center"
+        >
+          We make your ideas for web services a reality with a incredible Tech
+          Stack
+        </Text>
+        <Button variant="service">Request a service!</Button>
+        <Link href="#Services" scroll={false} title="Services">
+          <NextPage />
+        </Link>
+      </Flex>
     </Container>
   )
 }

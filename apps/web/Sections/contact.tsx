@@ -1,4 +1,4 @@
-import { Container, colors, Text, useMediaQuery } from 'ui'
+import { Container, colors, Text, useMediaQuery, Heading } from 'ui'
 import { useRouter } from 'next/router'
 
 const Contact = () => {
@@ -22,8 +22,16 @@ const Contact = () => {
       bgGradient={`linear(to-l,${colors.white.background}, ${colors.white.background})`}
       changePage={changePage}
     >
-      <Text color={colors.black.text}>
-        {isNotMobile ? 'Desktop Contact' : 'Mobile Contact'}
+      <Heading variant="title" color="#696969" marginBottom="40px">
+        Contact
+      </Heading>
+      <Text
+        variant="subtitle"
+        display={['none', 'none', 'flex']}
+        color="#696969"
+      >
+        We make your ideas for web services a reality with a incredible Tech
+        Stack
       </Text>
     </Container>
   )

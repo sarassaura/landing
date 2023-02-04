@@ -12,6 +12,7 @@
     "chromatic": "npx chromatic --project-token=8cd1fed37489"
   },
   "dependencies": {
+    "@next/font": "^13.1.6",
     "next": "^13.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
