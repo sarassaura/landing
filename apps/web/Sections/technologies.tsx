@@ -24,7 +24,12 @@ const Technologies = () => {
       bgGradient={`linear(to-l,${colors.red.lightBackground}, ${colors.red.darkBackground})`}
       changePage={changePage}
     >
-      <Heading variant="title" marginBottom={['30px', '30px', '40px']}>
+      <Heading
+        variant="title"
+        marginBottom={['30px', '30px', '40px']}
+        fontSize={['40px', '40px', '50px']}
+        lineHeight={['48px', '48px', '51px']}
+      >
         Technologies
       </Heading>
       <Text

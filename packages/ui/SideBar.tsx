@@ -14,6 +14,7 @@ export const SideBar: React.FC<SideProps> = ({ router }) => (
     height="100vh"
     align="center"
     justify="center"
+    paddingTop="64px"
     borderRight={
       router === '/#Contact'
         ? '1px solid rgba(83, 83, 83, 0.19)'
