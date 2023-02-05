@@ -22,7 +22,13 @@ const Contact = () => {
       bgGradient={`linear(to-l,${colors.white.background}, ${colors.white.background})`}
       changePage={changePage}
     >
-      <Heading variant="title" color="#696969" marginBottom="40px">
+      <Heading
+        variant="title"
+        color="#696969"
+        marginBottom="40px"
+        fontSize={['40px', '40px', '50px']}
+        lineHeight={['48px', '48px', '51px']}
+      >
         Contact
       </Heading>
       <Text

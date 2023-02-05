@@ -10,13 +10,7 @@ export const Heading = defineStyleConfig({
   // Styles for the visual style variations
   variants: {
     title: {
-      fontSize: '40px',
-      lineHeight: '48px',
       fontWeight: 800,
-      md: {
-        fontSize: '50px',
-        lineHeight: '61px',
-      },
     },
     'other-title': {
       fontSize: '40px',
@@ -27,6 +21,11 @@ export const Heading = defineStyleConfig({
       fontSize: '30px',
       lineHeight: '36px',
       fontWeight: 600,
+      md: {
+        fontSize: '40px',
+        lineHeight: '48px',
+        fontWeight: 800,
+      },
     },
   },
   // The default `size` or `variant` values

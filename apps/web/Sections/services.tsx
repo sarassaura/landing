@@ -39,14 +39,19 @@ const Services = () => {
         marginX="45px"
         width={['280px', '280px', '600px']}
         textAlign="center"
+        fontSize={['40px', '40px', '50px']}
+        lineHeight={['48px', '48px', '51px']}
       >
         We help clients with
       </Heading>
       <Flex direction="column">
         <Heading
           variant="services"
-          marginBottom="36px"
+          marginBottom={['36px', '36px', '28px']}
           textAlign={['center', 'center', 'start']}
+          fontSize={['30px', '30px', '40px']}
+          lineHeight={['36px', '36px', '48px']}
+          fontWeight={[600, 600, 800]}
         >
           UI/UX Design
         </Heading>
@@ -63,9 +68,13 @@ const Services = () => {
       <Flex direction="column">
         <Heading
           variant="services"
-          marginBottom="36px"
+          marginBottom={['36px', '36px', '28px']}
           marginTop="105px"
-          display={['flex', 'flex', 'none']}
+          display={['unset', 'unset', 'none']}
+          textAlign={['center', 'center', 'start']}
+          fontSize={['30px', '30px', '40px']}
+          lineHeight={['36px', '36px', '48px']}
+          fontWeight={[600, 600, 800]}
         >
           Development
         </Heading>
@@ -86,11 +95,15 @@ const Services = () => {
       <Flex direction="column">
         <Heading
           variant="services"
-          marginBottom="36px"
+          marginBottom={['36px', '36px', '28px']}
           marginTop="105px"
-          display={['flex', 'flex', 'none']}
+          display={['unset', 'unset', 'none']}
+          textAlign={['center', 'center', 'start']}
+          fontSize={['30px', '30px', '40px']}
+          lineHeight={['36px', '36px', '48px']}
+          fontWeight={[600, 600, 800]}
         >
-          Mainantance
+          Maintenance
         </Heading>
         <Text
           variant="paragraph"
