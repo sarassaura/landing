@@ -18,6 +18,24 @@ export const Button = defineStyleConfig({
       fontWeight: '400',
       color: '#FFFFFF',
     },
+    about: {
+      backgroundColor: '#4C2878',
+      width: '273px',
+      height: '73px',
+      color: '#FFFFFF',
+      fontSize: '20px',
+      lineHeight: '24px',
+      fontWeight: 600,
+      borderRadius: 'none',
+      _hover: {
+        backgroundColor: '#FFFFFF',
+        color: '#4C2878',
+      },
+      _focus: {
+        backgroundColor: '#FFFFFF',
+        color: '#4C2878',
+      },
+    },
   },
   // The default `size` or `variant` values
   defaultProps: {},
