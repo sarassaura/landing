@@ -8,6 +8,7 @@ interface ContainerProps {
   bgGradient: string
   id: string
   changePage: (up: number) => void
+  paddingTop: number
 }
 
 export const Container: React.FC<ContainerProps> = ({
@@ -16,6 +17,7 @@ export const Container: React.FC<ContainerProps> = ({
   bgGradient,
   id,
   changePage,
+  paddingTop,
 }) => (
   <ReactScrollWheelHandler
     upHandler={(e) => {
@@ -37,7 +39,7 @@ export const Container: React.FC<ContainerProps> = ({
       bgGradient={bgGradient}
       direction={direction}
       paddingLeft={[0, 0, 79]}
-      paddingTop={[0, 0, 66]}
+      paddingTop={[0, 0, paddingTop]}
       position="relative"
     >
       {children}

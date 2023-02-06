@@ -31,6 +31,7 @@ const Services = () => {
       direction="column"
       bgGradient={`linear(to-l,${colors.purple.lightBackground}, ${colors.purple.darkBackground})`}
       changePage={changePage}
+      paddingTop={66}
     >
       <Heading
         variant="title"

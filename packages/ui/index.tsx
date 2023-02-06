@@ -6,6 +6,7 @@ export {
   useMediaQuery,
   Heading,
   Flex,
+  Stack,
 } from '@chakra-ui/react'
 
 export * from './styles/theme'
@@ -18,3 +19,4 @@ export * from './Menu'
 export * from './MenuItem'
 export * from './NextPage'
 export * from './SocialMedia'
+export * from './Card'
