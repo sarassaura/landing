@@ -34,6 +34,7 @@ const Home = () => {
       direction="row"
       bgGradient={`linear(to-l,${colors.black.lightBackground}, ${colors.black.darkBackground})`}
       changePage={changePage}
+      paddingTop={66}
     >
       <Flex
         align="center"

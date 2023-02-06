@@ -21,6 +21,7 @@ const Contact = () => {
       direction="column"
       bgGradient={`linear(to-l,${colors.white.background}, ${colors.white.background})`}
       changePage={changePage}
+      paddingTop={66}
     >
       <Heading
         variant="title"
