@@ -6,14 +6,18 @@ import {
   Heading,
   Text,
   Flex,
+  Button,
+  Stack,
 } from 'ui'
 import { useRouter } from 'next/router'
 
 import Link from 'next/link'
+import { useState } from 'react'
 
 const Services = () => {
   const router = useRouter()
   const [isNotMobile] = useMediaQuery('(min-width: 48em)')
+  const [service, setService] = useState('ux')
   const changePage = (up: number) => {
     if (isNotMobile && up) {
       if (up > 0) {
@@ -45,79 +49,122 @@ const Services = () => {
       >
         We help clients with
       </Heading>
-      <Flex direction="column">
-        <Heading
-          variant="services"
-          marginBottom={['36px', '36px', '28px']}
-          textAlign={['center', 'center', 'start']}
-          fontSize={['30px', '30px', '40px']}
-          lineHeight={['36px', '36px', '48px']}
-          fontWeight={[600, 600, 800]}
+      <Flex direction={['column', 'column', 'row']}>
+        <Stack
+          direction="column"
+          spacing="28px"
+          display={['none', 'none', 'none', 'none', 'flex']}
+          marginRight="48px"
         >
-          UI/UX Design
-        </Heading>
-        <Text variant="paragraph" width={['340px', '340px', '650px']}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-          ullamcorper enim ut auctor dictum. Ut a bibendum turpis, ac interdum
-          neque. Phasellus molestie leo eget congue pretium. Sed luctus risus in
-          odio feugiat imperdiet. Phasellus commodo metus quis neque vestibulum,
-          in posuere nisi aliquam. Mauris lectus risus, porta non tellus vitae,
-          dapibus euismod orci. Morbi lacinia mattis justo, facilisis auctor
-          diam lacinia et. Donec feugiat metus at{' '}
-        </Text>
-      </Flex>
-      <Flex direction="column">
-        <Heading
-          variant="services"
-          marginBottom={['36px', '36px', '28px']}
-          marginTop="105px"
-          display={['unset', 'unset', 'none']}
-          textAlign={['center', 'center', 'start']}
-          fontSize={['30px', '30px', '40px']}
-          lineHeight={['36px', '36px', '48px']}
-          fontWeight={[600, 600, 800]}
-        >
-          Development
-        </Heading>
-        <Text
-          variant="paragraph"
-          width={['340px', '340px', '650px']}
-          display={['flex', 'flex', 'none']}
-        >
-          Morbi maximus, purus in aliquet molestie, nisl nisl aliquet sem, ut
-          imperdiet est massa nec sem. Fusce vestibulum dui ac fringilla varius.
-          In vestibulum lorem et lectus sollicitudin tincidunt. Orci varius
-          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus. Cras non dui eget odio suscipit consectetur suscipit hendrerit
-          orci. Quisque fringilla massa et tortor sagittis tempor vitae eget
-          urna. Suspendisse id ligula eu lectus
-        </Text>
-      </Flex>
-      <Flex direction="column">
-        <Heading
-          variant="services"
-          marginBottom={['36px', '36px', '28px']}
-          marginTop="105px"
-          display={['unset', 'unset', 'none']}
-          textAlign={['center', 'center', 'start']}
-          fontSize={['30px', '30px', '40px']}
-          lineHeight={['36px', '36px', '48px']}
-          fontWeight={[600, 600, 800]}
-        >
-          Maintenance
-        </Heading>
-        <Text
-          variant="paragraph"
-          width={['340px', '340px', '650px']}
-          marginBottom="150px"
-          display={['flex', 'flex', 'none']}
-        >
-          In ultricies tempus nunc, in condimentum mi placerat sit amet. Aliquam
-          rutrum velit id tortor egestas laoreet. Nullam molestie nulla nec
-          tempus vehicula. Vivamus et ligula sit amet mi commodo efficitur.
-          Suspendisse potenti. Etiam turpis neque, aliquam nec erat ac,
-          hendrerit rhoncus tortor.
-        </Text>
+          <Button
+            variant="about"
+            onClick={() => {
+              setService('ux')
+            }}
+          >
+            UI/UX Design
+          </Button>
+          <Button
+            variant="about"
+            onClick={() => {
+              setService('dev')
+            }}
+          >
+            Development
+          </Button>
+          <Button
+            variant="about"
+            onClick={() => {
+              setService('maintain')
+            }}
+          >
+            Mainantance
+          </Button>
+        </Stack>
+        <Flex direction="column" justify="center">
+          <Heading
+            variant="services"
+            marginBottom={['36px', '36px', '28px']}
+            textAlign={['center', 'center', 'start']}
+            fontSize={['30px', '30px', '40px']}
+            lineHeight={['36px', '36px', '48px']}
+            fontWeight={[600, 600, 800]}
+            display={service !== 'ux' ? ['unset', 'unset', 'none'] : 'unset'}
+          >
+            UI/UX Design
+          </Heading>
+          <Text
+            variant="paragraph"
+            width={['340px', '340px', '650px']}
+            display={service !== 'ux' ? ['unset', 'unset', 'none'] : 'unset'}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            ullamcorper enim ut auctor dictum. Ut a bibendum turpis, ac interdum
+            neque. Phasellus molestie leo eget congue pretium. Sed luctus risus
+            in odio feugiat imperdiet. Phasellus commodo metus quis neque
+            vestibulum, in posuere nisi aliquam. Mauris lectus risus, porta non
+            tellus vitae, dapibus euismod orci. Morbi lacinia mattis justo,
+            facilisis auctor diam lacinia et. Donec feugiat metus at{' '}
+          </Text>
+        </Flex>
+        <Flex direction="column" justify="center">
+          <Heading
+            variant="services"
+            marginBottom={['36px', '36px', '28px']}
+            marginTop={['105px', '105px', 'auto']}
+            display={service !== 'dev' ? ['unset', 'unset', 'none'] : 'unset'}
+            textAlign={['center', 'center', 'start']}
+            fontSize={['30px', '30px', '40px']}
+            lineHeight={['36px', '36px', '48px']}
+            fontWeight={[600, 600, 800]}
+          >
+            Development
+          </Heading>
+          <Text
+            variant="paragraph"
+            width={['340px', '340px', '650px']}
+            display={service !== 'dev' ? ['unset', 'unset', 'none'] : 'unset'}
+            marginBottom="auto"
+          >
+            Morbi maximus, purus in aliquet molestie, nisl nisl aliquet sem, ut
+            imperdiet est massa nec sem. Fusce vestibulum dui ac fringilla
+            varius. In vestibulum lorem et lectus sollicitudin tincidunt. Orci
+            varius natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Cras non dui eget odio suscipit consectetur suscipit
+            hendrerit orci. Quisque fringilla massa et tortor sagittis tempor
+            vitae eget urna. Suspendisse id ligula eu lectus
+          </Text>
+        </Flex>
+        <Flex direction="column" justify="center">
+          <Heading
+            variant="services"
+            marginBottom={['36px', '36px', '28px']}
+            marginTop={['105px', '105px', 'auto']}
+            display={
+              service !== 'maintain' ? ['unset', 'unset', 'none'] : 'unset'
+            }
+            textAlign={['center', 'center', 'start']}
+            fontSize={['30px', '30px', '40px']}
+            lineHeight={['36px', '36px', '48px']}
+            fontWeight={[600, 600, 800]}
+          >
+            Maintenance
+          </Heading>
+          <Text
+            variant="paragraph"
+            width={['340px', '340px', '650px']}
+            marginBottom={['150px', '150px', 'auto']}
+            display={
+              service !== 'maintain' ? ['unset', 'unset', 'none'] : 'unset'
+            }
+          >
+            In ultricies tempus nunc, in condimentum mi placerat sit amet.
+            Aliquam rutrum velit id tortor egestas laoreet. Nullam molestie
+            nulla nec tempus vehicula. Vivamus et ligula sit amet mi commodo
+            efficitur. Suspendisse potenti. Etiam turpis neque, aliquam nec erat
+            ac, hendrerit rhoncus tortor.
+          </Text>
+        </Flex>
       </Flex>
       <Link href="#Technologies" scroll={false} title="Technologies">
         <NextPage />
