@@ -1,4 +1,13 @@
-import { Container, colors, Text, useMediaQuery, Heading } from 'ui'
+import {
+  Container,
+  colors,
+  Text,
+  useMediaQuery,
+  Heading,
+  Stack,
+  InputBox,
+  Button,
+} from 'ui'
 import { useRouter } from 'next/router'
 
 const Contact = () => {
@@ -26,7 +35,7 @@ const Contact = () => {
       <Heading
         variant="title"
         color="#696969"
-        marginBottom="40px"
+        marginBottom={['135px', '135px', '40px']}
         fontSize={['40px', '40px', '50px']}
         lineHeight={['48px', '48px', '51px']}
       >
@@ -36,10 +45,26 @@ const Contact = () => {
         variant="subtitle"
         display={['none', 'none', 'flex']}
         color="#696969"
+        marginBottom="37px"
       >
         We make your ideas for web services a reality with a incredible Tech
         Stack
       </Text>
+      <Stack
+        spacing="47px"
+        direction="column"
+        width={['294px', '294px', '513px']}
+      >
+        <InputBox placeholder="Name" />
+        <InputBox placeholder="Email" />
+        <InputBox placeholder="Describe your project here!" />
+        <Stack spacing={['15px', '15px', '25px']} direction="row">
+          <Button variant="contact">A website</Button>
+          <Button variant="contact">Modernization</Button>
+          <Button variant="contact">A website</Button>
+        </Stack>
+        <Button variant="send">SEND</Button>
+      </Stack>
     </Container>
   )
 }
