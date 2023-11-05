@@ -2,7 +2,7 @@
 <p align="center"><img alt="Lambda express Logo" height="100px" src="/logo.png"></p>
 <h1 align="center">Lambda Express Landing</h1>
 <p align="center"> The landing page for the Lambda Express team :)</p>
-<p align="center"><img alt="Lambda express" src="/lambda.jpeg"></p>
+<p align="center"><img alt="Lambda express" src="/lambda_optimized.webp"></p>
 
 ## Design
 
