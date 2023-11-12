@@ -1,6 +1,6 @@
 <div align="center" justify="center">
 
-<img src="/logo.png" alt="Logo" height="100px">
+<img src="/logo.png" alt="Logo" height="300px">
 
 # Lambda Express Landing
 
