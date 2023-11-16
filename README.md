@@ -6,8 +6,8 @@
 
 <p>The landing page for the Lambda Express team :)</p>
 
-[🇬🇧 English](/README.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[🇪🇸 Español](/README.es.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[🇬🇧 English](/README.md)&nbsp;&nbsp; • &nbsp;&nbsp;
+[🇪🇸 Español](/README.es.md)&nbsp;&nbsp; • &nbsp;&nbsp;
 [🇧🇷 Português](/README.pt-BR.md)
 
 ![Lambda Express](/lambda_optimized.webp?raw=true)
