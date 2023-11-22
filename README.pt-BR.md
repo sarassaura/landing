@@ -1,6 +1,6 @@
 <div align="center" justify="center">
 
-![Logo](/logo1.png?raw=true)
+![Logo](/logo.svg?raw=true)
 
 # Lambda Express Inicial
 
