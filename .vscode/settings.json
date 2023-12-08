@@ -1,10 +1,9 @@
 {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll": true
+        "source.fixAll": "explicit"
     },
     "eslint.format.enable": true,
-    "eslint.packageManager": "yarn",
     "files.associations": {
         "*.tsx": "typescriptreact"
     }
